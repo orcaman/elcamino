@@ -55,10 +55,10 @@ body {
   display: block;
 }
 .style-switcher li:nth-child(1) {
-  border-left: 8px solid rgb(19, 19, 148);
+  border-left: 8px solid rgb(0, 61, 98);
 }
 .style-switcher li:nth-child(1):hover {
-  border-left: 2em solid rgb(19, 19, 148);
+  border-left: 2em solid rgb(0, 61, 98);
 }
 .style-switcher li:nth-child(2) {
   border-left: 8px solid #4aa1db;
@@ -105,10 +105,10 @@ p {
   line-height: 1.75;
 }
 a {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
 }
 a:hover {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
   text-decoration: underline;
 }
 blockquote {
@@ -118,7 +118,7 @@ blockquote {
   color: white !important;
 }
 .highlight {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
 }
 .vertical-align {
   margin: 100px 0;
@@ -140,8 +140,8 @@ blockquote {
 }
 .btn.btn-empty {
   background: none !important;
-  border: 2px solid rgb(19, 19, 148);
-  color: rgb(19, 19, 148) !important;
+  border: 2px solid rgb(0, 61, 98);
+  color: rgb(0, 61, 98) !important;
 }
 .btn.btn-empty:hover {
   background-color: rgba(0, 0, 0, 0.03) !important;
@@ -320,7 +320,7 @@ blockquote {
   padding: 1em 0;
 }
 .navbar .navbar-nav .current > a {
-  color: rgb(19, 19, 148) !important;
+  color: rgb(0, 61, 98) !important;
 }
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus {
@@ -340,7 +340,7 @@ blockquote {
   font-size: 0.9em;
 }
 .navbar .nav > li ul .dropdown-header {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
 }
 .navbar-brand,
 .navbar-nav > li > a {
@@ -416,7 +416,7 @@ blockquote {
 }
 .cbp-af-header .nav li.open > a {
   background: none;
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
 }
 .cbp-af-header .nav li ul a {
   color: #333333;
@@ -432,10 +432,10 @@ blockquote {
   text-transform: uppercase;
 }
 .cbp-af-header .nav a.signup {
-  color: rgb(19, 19, 148) !important;
+  color: rgb(0, 61, 98) !important;
 }
 .cbp-af-header .nav a:hover {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
   background: none;
 }
 /* Transitions and class for reduced height */
@@ -566,10 +566,10 @@ blockquote {
   border-radius: 4px;
 }
 .login-part input:focus {
-  border-color: rgb(19, 19, 148);
+  border-color: rgb(0, 61, 98);
 }
 .login-part button[type='submit'] {
-  background: rgb(19, 19, 148);
+  background: rgb(0, 61, 98);
   padding: 17px;
 }
 .login-part button[type='submit']:hover {
@@ -594,7 +594,7 @@ blockquote {
   padding: 0 1.5em;
 }
 .login-part p.disclaimer a {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
 }
 #signup .login-part {
   height: 362px;
@@ -1204,7 +1204,7 @@ section .login-overlay {
   font-size: 3em;
   font-weight: 800;
   margin: 0 0 0.5em;
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
 }
 #intro .carousel-caption-center h2,
 #intro-video .carousel-caption-center h2 {
@@ -1217,14 +1217,14 @@ section .login-overlay {
   font-size: 1.3em;
   font-weight: 400;
   line-height: 1.8;
-  color:rgb(19, 19, 148);
+  color:rgb(0, 61, 98);
   margin: 1em 10em;
 }
 #intro .carousel-caption-center .btn,
 #intro-video .carousel-caption-center .btn {
   margin: 1em 0;
   padding: 1em 2em;
-  color:rgb(19, 19, 148);
+  color:rgb(0, 61, 98);
   background: #FCD741;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1264,7 +1264,7 @@ section .login-overlay {
 #intro-video .carousel-caption-left .btn {
   margin: 1em 0;
   padding: 1em 2em;
-  background: rgb(19, 19, 148);
+  background: rgb(0, 61, 98);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1500,7 +1500,7 @@ section h3 {
   font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
   letter-spacing: 1px;
 }
 section p {
@@ -1631,12 +1631,12 @@ section.cta p:last-child {
   padding-bottom: 0;
 }
 section.cta .btn {
-  background: rgb(19, 19, 148);
+  background: rgb(0, 61, 98);
   color: white;
   padding: 0.5em 2em;
   font-size: 1em;
   margin: 0 1em;
-  border: 2px solid rgb(19, 19, 148);
+  border: 2px solid rgb(0, 61, 98);
   text-transform: uppercase;
 }
 section.cta .btn:hover {
@@ -1741,7 +1741,7 @@ section .overlay-text {
   margin: 2em 0;
 }
 #pricing .plan .plan-cta .plan-buy .btn {
-  background: rgb(19, 19, 148);
+  background: rgb(0, 61, 98);
   padding: 10px 30px;
   font-size: 1em;
   font-weight: 300;
@@ -1800,10 +1800,10 @@ section .overlay-text {
   content: '';
 }
 #testimonials .carousel blockquote a {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
 }
 #testimonials .carousel blockquote a:hover {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
   text-decoration: underline;
 }
 #portfolio .portfolio-item {
@@ -1893,7 +1893,7 @@ section .overlay-text {
   line-height: 35px;
   border: 1px solid #fff;
   border-radius: 50%;
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
   text-decoration: none;
 }
 .grid figcaption a.preview {
@@ -2049,7 +2049,7 @@ section .overlay-text {
   padding: 1em 0;
 }
 .contact-form footer button {
-  background: rgb(19, 19, 148);
+  background: rgb(0, 61, 98);
   border-radius: 4px;
   border: 0;
   color: white;
@@ -2086,7 +2086,7 @@ footer.footer .footer-logo a {
   color: #C9CACC;
 }
 footer.footer .footer-logo a:hover {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
   text-decoration: none;
 }
 footer.footer h2 {
@@ -2113,7 +2113,7 @@ footer.footer ul li a {
   color: #C9CACC;
 }
 footer.footer ul li a:hover {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
   text-decoration: none;
 }
 footer.footer .copyright {
@@ -2140,13 +2140,13 @@ footer.footer .icon {
   font-size: 1em;
 }
 .icon:hover {
-  color: rgb(19, 19, 148);
+  color: rgb(0, 61, 98);
 }
 .icons .icon-wrapper {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background-color: rgb(19, 19, 148);
+  background-color: rgb(0, 61, 98);
   text-align: center;
   margin: 2em auto 0;
   padding: 3em 0;
@@ -2321,7 +2321,7 @@ footer.footer .icon {
   box-shadow: 0px 0px 0px 2px #b5cd60;
 }
 .modal-form input[type="submit"] {
-  background: rgb(19, 19, 148);
+  background: rgb(0, 61, 98);
   border: 0;
   color: white;
   font-weight: bold;

@@ -4,7 +4,7 @@ runtime: python27
 api_version: 1
 threadsafe: yes
 
-default_expiration: "0d"
+default_expiration: "1d"
 
 handlers:
 - url: /favicon.ico
@@ -24,4 +24,10 @@ handlers:
 libraries:
 - name: webapp2
   version: "2.5.2"
+- name: jinja2
+  version: latest
+
+
+env_variables:
+  latest_static_version: "2014.4.21.2"
 

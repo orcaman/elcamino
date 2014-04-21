@@ -15,35 +15,35 @@
   <meta property="og:site_name" content="El Camino | Photo Journey">
   <meta property="og:image" content="https://farm4.staticflickr.com/3813/10160299264_9b01ed2286_h.jpg">
   <meta property="og:type" content="blog">
-  <meta property="og:url" content="http://el-camino.appspot.com/">
+  <meta property="og:url" content="http://www.elcaminophotos.com/">
 
   <link rel="shortcut icon" href="ico/favicon.png">
   <link rel="icon" 
-      type="image/png" 
-      href="ico/favicon.png">
+  type="image/png" 
+  href="ico/favicon.png">
 
   <title>El Camino | Photo Journey</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/theme.css" rel="stylesheet">
+  <link href="/static/css/bootstrap.css?v={{v}}" rel="stylesheet">
+  <link href="/static/css/theme.css?v={{v}}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="/static/css/magnific-popup.css?v={{v}}" rel="stylesheet">
 
   <!-- Font Awesome -->
-  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/css/font-awesome.min.css?v={{v}}" rel="stylesheet">
 
   <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
 
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- HTML5 shim and Respond.js?v={{v}} IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js?v={{v}}"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js?v={{v}}/1.3.0/respond.min.js?v={{v}}"></script>
       <![endif]-->
 
-      <script src="js/modernizr.custom.js"></script>
+      <script src="/static/js/modernizr.custom.js?v={{v}}"></script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -57,6 +57,15 @@
     </head>
 
     <body>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=350652338461";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
       <div class="preloader">
        <div class="spinner">
         <div class="bounce1"></div>
@@ -125,7 +134,7 @@
           <div class="col-lg-12 overlay-text">
             <h2>Walking</h2>
           </div><!-- /.col-lg-12 -->
-        </div><!-- /.row -->
+        </div><!-- /.row --> 
 
         <div class="row">
           <div class="col-sm-4 text-center overlay-text icons">
@@ -170,7 +179,7 @@
         <div class="row">
           <div class="col-sm-5 overlay-text">
             <div class="vertical-align">
-              <h2>St. Jean to Roncesvalles (25km)</h2>
+              <h2>Saint-Jean-Pied-de-Port to Roncesvalles (25km)</h2>
               <p>Arriving at Saint-Jean-Pied-de-Port in France. Crossing the Pyrenees via Route Napoléon to Roncesvalles, Basque Country</p>
             </div>
           </div>
@@ -193,6 +202,20 @@
             <div class="vertical-align">
               <h2>off to an amazing start</h2>
               <p>After spending a quite evening at st. jean, we got up at sunrise, packed some baguettes from the local bakery and set out to cross the amazing scenic route napoléon. This first stage of the camino proved to be very different than the stages to come (it's a long climb at high altitude and you want to do it only in good weather)</p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-arrow-right icon-small">  As the starting point of the camino, and being on the French side, st. jean is a touristic city and prices are not cheap. Restaurants did not look amazing, we found the best dinning option to be buying some good camembert cheese, bread and tomatos and having dinner at our room</i>
+                  <br>
+                  <br>
+                  <i class="fa fa-arrow-right icon-small">  Hôtel Itzalpea is a nice homey place to spend the night at st. jean</i>
+                  <br>
+                  <br>
+                  <i class="fa fa-cutlery icon-small">  Ask the locals at st. jean about a bakery where you can get a cheap fresh baguettes for the long first stage. Not all bakeries open up early in the morning!</i>
+                  <br>
+                  <br>
+                  <i class="fa fa-camera-retro icon-small">  The view from the climb up from st. jean is one of the most dramatic on the camino. you do not want to do it in bad weather and miss out - consider spending an additional night at st. jean if you have a chance of improving the viewing conditions</i>
+                </div>
+              </p>
             </div>
           </div>
         </div>
@@ -304,7 +327,8 @@
           <div class="col-sm-5 col-sm-offset-1">
             <div class="vertical-align">
               <h2>In the heart of the basque country</h2>
-              <p>After crossing to Navarra from France, the route follows a beutiful road that took us from one old village to another. Gorgeous morning weather with cool tasty fog at sunrise was very welcome. <br><br> This is the only cross processed slide-film piece from the trip.</p>
+              <p>After crossing to Navarra from France, the route follows a beutiful road that took us from one old village to another. Gorgeous morning weather with cool tasty fog at sunrise was very welcome.</p>
+              <i class="fa fa-camera-retro icon-small"> This is the only cross processed slide-film piece from the trip. The effect is achieved by applying C-41 processing over slide-film that should be developed with the E-6 process.</i>
             </div>
           </div>
         </div>
@@ -408,6 +432,14 @@
             <div class="vertical-align">
               <h2>An (Unwelcome) Break From Nature</h2>
               <p>We found that the best thing about Pamplona was the way in and out of pamplona. After enjoying the serenity of the basque countryside, we did not appreciate Pamplona's hustle &amp bustle, tourist shops, etc.</p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-arrow-right icon-large">  You are no longer in the friendly country side at. Pamplona is a busy town which might remind you why you love travlling on the countryside so much. Consider just walking past the city to the next stage of the camino</i>
+                  <br>
+                  <br>
+                  <i class="fa fa-cutlery icon-small">  Beware of the classic tourist traps at Pamplona. Do not look for a good dinner in the area of the main plaza</i>
+                </div>
+              </p>
             </div>
           </div>
         </div>
@@ -512,6 +544,12 @@
               <h2>Bridge of the Queen</h2>
               <p>The way from Pamplona to Puente La Reina is extraordinarily beautiful. The route passes through amazing fields, climbs to the top of an impressive hill with gorgeous views, and ends up in the gorgeous town of Puente La Reina. This town has some good places to eat and some beautiful alley's to explore.</p>
             </div>
+            <p><div class="icon-wrapper">
+              <i class="fa fa-arrow-right icon-large">  Arrive early and book your accomodation at Puente La Reina. Puente La Reina can be busy with in-house tourism and cheap accomodation gets fully booked quickly</i>
+              <br><br>
+              <i class="fa fa-cutlery icon-small">  La Conrada (Puente La Reina) is an excellent restaurant to eat at. Try the rabbit stew and don't miss out on the red house wine</i>
+            </div></p>
+            
           </div>
         </div>
       </div>
@@ -604,6 +642,13 @@
             <div class="vertical-align">
               <h2>The Green Vinyards and The Gray Town</h2>
               <p>Leaving Puente La Reina was not easy (2 bottles of red wine at dinner didn't help), but the turned out to be of the best stages in the camino for us. The way was amazingly green, filled with vinyards packed with juicy grapes and Estella turned out to be amazing. The town is was far more impressive than what we imagined, people were welcomeing and food was great.</p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-cutlery icon-small">  Restaurant Casanova at Estella offers great food in large portions (you will need that after walking from puente la reina)</i>
+                  <br><br>
+                  <i class="fa fa-camera-retro icon-small">  Take some time to explore Estella. It's a gorgeous little town worth spending some time at</i>
+                </div>
+              </p>
             </div>
           </div>
         </div>
@@ -699,7 +744,15 @@
           <div class="col-sm-5 col-sm-offset-1">
             <div class="vertical-align">
               <h2>I've Seen Fields, Neo. Endless Fields</h2>
-              <p>Arguably the most beautiful stage of the camino, the walk from Estella to Los Arcos is a phonomenal journey between endless fields (28km walk type kind of endless). Arrive at the small town of Los Arcos to enjoy a refreshing basque style cider!</p>
+              <p>
+                Arguably the most beautiful stage of the camino, the walk from Estella to Los Arcos is a phonomenal journey between endless fields (28km walk type kind of endless). Arrive at the small town of Los Arcos to enjoy a refreshing basque style cider!
+              </p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-cutlery icon-small">  At Los Arcos, try the amazing Cider and Cider-dipped Chorizo that Hotel Suetxe sometimes serve</i>
+                  <i class="fa fa-arrow-right icon-large">  It's a <b>very</b> long walk from Estella, make sure you have enough water on a warm day</i>
+                </div>
+              </p>
             </div>
           </div>
         </div>
@@ -807,7 +860,16 @@
             <div class="vertical-align">
               <h2>From Serenity to Crazines</h2>
               <p>On the way from Los Arcos to Logroño, we spent the night at the beautiful town of viana, so that we will arrive in time for the San Mateo festival: a series of three days where the young people of Logroño and the area basically get drunk off wine and party all day long. This stage marked the first part of our camino.</p>
-            </div> 
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-arrow-right icon-small">  Rioja grape harvest is celebrated at San Mateo festivel, and it's a sight to behold. If you are travelling around September, make sure you don't miss that one</i>
+                  <br><br>
+                  <i class="fa fa-arrow-right icon-small">  If you want to spend some time in the area to enjoy the beautiful surroundings and great Rioja wine, consider staying at Viana. It's a small town within walking distance to Logroño and can be much nicer and less busy (especially if you are looking to sleep in the free Albergue)</i>
+                  <br><br>
+                  <i class="fa fa-cutlery icon-small">  Hotel Palacio de Pujadas at viana offers amazing dinners (great food and marvelous wine) for relatively cheap prices. Check it out if you are hungry around viana.</i>
+                </div>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -877,7 +939,7 @@
           <div class="col-sm-5 overlay-text">
             <div class="vertical-align">
               <h2>Ponferrada to Villafranca del Bierzo (23km)</h2>
-              <!-- <p></p> -->
+              
             </div>
           </div>
         </div>
@@ -899,6 +961,13 @@
             <div class="vertical-align">
               <h2>An Optimistic Start</h2>
               <p>The second part of our Camino has begun at Ponferrada. It was March 2013, and weather was looking nice (or so we thought). We were blown away by the quality of the Briezo region wine, and from the outstanding walk from Ponferrada to Villafrance. </p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-cutlery icon-small">  Hotel El Castillo at Ponferrada offers a great Pilgrims menu dinner. The Birezo red wind and fried Calamary they serve is outstanding</i>
+                  <br><br>
+                  <i class="fa fa-camera-retro icon-small">  The views on the way from Ponferrada to Villafranca del Bierzo are some of the greatest on this last "part" of the camino, approaching Galicia.</i>
+                </div>
+              </p>
             </div> 
           </div>
         </div>
@@ -987,13 +1056,26 @@
           <div class="col-sm-5 col-sm-offset-1">
             <div class="vertical-align">
               <h2>Winds of Change</h2>
-              <p>Our day at Villafranca del Bierzo was one to remember. The sun wa shining over the beautiful town, and still remember this is one of the most gorgeous towns of the camino. As hiked to our next stop, O'Cebreiro, it had started to rain pretty heavily, almost non stop. We decided to spend the night at La Faba, a tiny village (only 3 or 4 houses), where we were very kindly greeted by the wonderful ladies that run the Albergue. </p>
-            </div> 
+              <p>Our day at Villafranca del Bierzo was one to remember. The sun wa shining over the beautiful town, and still remember this is one of the most gorgeous towns of the camino. As hiked to our next stop, O'Cebreiro, it had started to rain pretty heavily, almost non stop. We decided to spend the night at La Faba, a tiny village (only 3 or 4 houses), where we were very kindly greeted by the wonderful hospitaleiras that run the Albergue. </p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-cutlery icon-small">  At Villafranca, Find the local butcher shop to get some local delicassies, get yourself a bottle of red wine from Bierzo, and you are all set :-)</i>
+                  <br>
+                  <br>
+                  <i class="fa fa-camera-retro icon-small">  Take some time to explore Villafrance. It's a gorgeous little town worth spending some time at</i>
+                  <br>
+                  <br>
+                  <i class="fa fa-arrow-right icon-small">  The Albergue at La Faba is a great camino experience. It's a tiny isolated village and the hospitaleiras are very nice. It can be a great place to stop before continuing the climb to O'Cebreiro, especially if the weather is bad</i>
+                  <br>
+                  <br>
+                  <i class="fa fa-cutlery icon-small">  At La Faba, ask the hospitaleiras about the nearby restaurant. It's a small one room place that serves great fresh trouts and good red wine</i>
+                </div>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-    </section>
+      </section>
 
 
     <!-- Gallery
@@ -1003,7 +1085,7 @@
         <div class="row">
           <div class="col-md-12">
             <div id="owl-example9" class="owl-carousel">
-              
+
               <div class="item">
                 <a href="https://farm9.staticflickr.com/8116/8622119483_a95443c11b_h.jpg" class="popup-gallery">
                   <img src="https://farm9.staticflickr.com/8536/8623215432_2166e8948f.jpg" alt="El Camino Photo">
@@ -1071,6 +1153,13 @@
             <div class="vertical-align">
               <h2>Winter Chill</h2>
               <p>After a good night's sleep at Albergue La Faba, we started the climb towards the village of O'Cebreiro. By the time we got to the village, everything was covered with snow. There was upto 3 meters of snow on the sides of the road, and the path itself was snow covered as well. Underprepared, this was a beautiful yet very unpleasant stage. <br><br>When we got back to lower lands, we found shelter at hostel in a village. On the walk the next morning, it kept on raining heavily during our entire walk, till we reached Sarria</p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-arrow-right icon-small"> Check the weather before climbing up through O'Cebreiro. It can be very misearable at off-season times, to the point of being very dangerous (it's a high altitude isolated area)</i>
+                  <br><br>
+                  <i class="fa fa-cutlery icon-small"> It's always raining at O'Cebreiro, and it's a good idea to have a good warm Caldo Gallego soup at the tavern. They also serve great Pulpo ala Gallega, but the Caldo is really excellent</i>
+                </div>
+              </p>
             </div> 
           </div>
         </div>
@@ -1178,6 +1267,11 @@
             <div class="vertical-align">
               <h2>Rain, Rain, Rain</h2>
               <p>The Galician rain kept on striking us all the way to the beautiful town of Portomarin. There, we found a homey place where they would serve food and offer a bed. The morning after that the rain continued to hit hard all the way to Palas del Rai</p>
+              <p>
+                <div class="icon-wrapper">
+                <i class="fa fa-cutlery icon-small">  Don't miss restaurant Perez (ask locals for the Perez place). It's a family owned place serving amazing pulpo ala gallega at a great atmosphere and view over the river.</i>
+                </div>
+              </p>
             </div> 
           </div>
         </div>
@@ -1287,6 +1381,11 @@
             <div class="vertical-align">
               <h2>Pulpo ala Gallega</h2>
               <p>By the time we got to Arzúa, which in itself is quite a boring place (only reason to stop is to sleep before continuing to Santiao), we became one with the water: it was the rainiest month of March in Galicia in the last 70 years. <br><br>Yet it was all more than worth it if only for stopping at legendary Melide, where they pretty much make the best Pulpo ala Gallega you could ask for.</p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-cutlery icon-small">  En Pulpería Ezequie - a must see/eat. Best pulpo ala gallega you will ever have, amazing experience of eating at a busy pilgrim galician eat house</i>
+                </div>
+              </p>
             </div> 
           </div>
         </div>
@@ -1357,7 +1456,7 @@
         <div class="row">
           <div class="col-sm-5 overlay-text">
             <div class="vertical-align">
-              <h2>Arzúa to Santiago de Compostela (36.5km)</h2>
+              <h2>Arzúa to Opino (18 km), Opino to Santiago de Compostela (18.5km)</h2>
               <p>the end of a journey</p>
             </div>
           </div>
@@ -1379,7 +1478,18 @@
           <div class="col-sm-5 col-sm-offset-1">
             <div class="vertical-align">
               <h2>Santiago de Compostela</h2>
-              <p>Arriving at Santiago de Compostela was very exciting. We checked in at our final accomodation for the trip, and went straight to the pilgrim office to get our compostelas. After that we had two days to explore the city, which albeit the rain and off-seasonality was alive and kicking. Later that day, we were lucky enough to witness the Buta Fumeiro ceremony in all it's glory. It's sad that the journey is over, but Santiago succeeds in becoming a worthy climax of this trip.</p>
+              <p>
+                Arriving at Santiago de Compostela was very exciting. We checked in at our final accomodation for the trip, and went straight to the pilgrim office to get our compostelas. After that we had two days to explore the city, which albeit the rain and off-seasonality was alive and kicking. Later that day, we were lucky enough to witness the Buta Fumeiro ceremony in all it's glory. It's sad that the journey is over, but Santiago succeeds in becoming a worthy climax of this trip.
+              </p>
+              <p>
+                <div class="icon-wrapper">
+                  <i class="fa fa-cutlery icon-small"> Hotel OPino is a great place to spend the night at on the way to Santiago. It's a quite little town, and they also have a very good restaurant, frequent by locals (try the excellent Bacalao!)</i>
+                  <br><br>
+                  <i class="fa fa-cutlery icon-small"> Hospedería San Martín Pinario at Santiago offers a great dinner menu - probably the best deal in town (all you can drink house wine and three course menu for the average Pilgrim menu price). As a hotel - it's "okay" (not amazing and not cheap)</i>
+                  <br><br>
+                  <i class="fa fa-arrow-right icon-small"> Upon arrival at the Pilgrim office, ask them if there's a botafumeiro ceremony planned. It's a definite must-see. It might be possible to arrange a ceremony via a donation if you group together with other pilgrims</i>
+                </div>
+              </p>
             </div> 
           </div>
         </div>
@@ -1451,8 +1561,7 @@
                 <h2>Walk the camino</h2>
                 <p>a father-son photo journey</p>
                 <br>
-                <p class="muted">© 2014 Or Hiltch Inc.</p>
-                <a href="/static/terms.txt" target="_blank">Terms of Service</a>    
+                <p class="muted">© 2014 El Camino Photos</p>
               </div>
             </div>
             <div class="col-sm-3 col-md-3" style="display:none;">
@@ -1463,21 +1572,24 @@
                 <li><a href="#">Product for Windows</a></li>           
               </ul>
             </div>
-            <div class="col-sm-3 col-md-3" style="display:none;">
-              <h3>Company</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Jobs&emsp;<span class="label label-info">We're hiring!</span></a></li>           
-              </ul>
-            </div>
             <div class="col-sm-3 col-md-3">
               <h3>Contact</h3>
               <ul class="list-unstyled" style="color:#88b7b3 !important;">
                 <li>Any questions? <a href="mailto:contact@elcaminophotos.com">contact us</a></li>
-                <a href="https://plus.google.com/105006121226872921427" rel="publisher" style="color:#88b7b3 !important;">Find us on Google+</a>
+                <li>
+                  <a href="https://plus.google.com/105006121226872921427" rel="publisher" style="color:#88b7b3 !important;">Find us on Google+</a>
+                </li>
+                <li><div class="fb-like" data-href="http://www.elcaminophotos.com/" data-layout="standard" data-action="like" data-show-faces="true" data=like="false" data-share="true"></div></li>
               </ul>
-            </div>  
+            </div> 
+            <div class="col-sm-3 col-md-3" style="">
+              <h3>Say Hi</h3>
+              <ul class="list-unstyled">
+                <!-- <li><a href="#">About Us</a></li> -->
+                <!-- <li><a href="#">Our Team</a></li> -->
+                <li><div class="fb-comments" data-href="http://www.elcaminophotos.com/" data-numposts="5" data-colorscheme="dark"></div></li>           
+              </ul>
+            </div>
           </div>
         </div>
         <!-- <div class="row">
@@ -1532,19 +1644,19 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/scrollReveal.js"></script>
-    <script src="js/jquery.scrollTo.js" defer="defer"></script>
-    <script src="js/jquery.nav.js" defer="defer"></script>
-    <script src="js/imagesloaded.pkgd.min.js" defer="defer"></script>
-    <script src="js/isotope.min.js" defer="defer"></script>
-    <script src="js/jquery.magnific-popup.min.js" defer="defer"></script>
-    <script src="js/jqBootstrapValidation.js" defer="defer"></script>
-    <script src="js/custom.js"></script>
+    <script src="/static/js/jquery-1.10.2.min.js?v={{v}}"></script>
+    <script src="/static/js/bootstrap.min.js?v={{v}}"></script>
+    <script src="/static/js/classie.js?v={{v}}"></script>
+    <script src="/static/js/cbpAnimatedHeader.min.js?v={{v}}"></script>
+    <script src="/static/js/owl.carousel.min.js?v={{v}}"></script>
+    <script src="/static/js/scrollReveal.js?v={{v}}"></script>
+    <script src="/static/js/jquery.scrollTo.js?v={{v}}" defer="defer"></script>
+    <script src="/static/js/jquery.nav.js?v={{v}}" defer="defer"></script>
+    <script src="/static/js/imagesloaded.pkgd.min.js?v={{v}}" defer="defer"></script>
+    <script src="/static/js/isotope.min.js?v={{v}}" defer="defer"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js?v={{v}}" defer="defer"></script>
+    <script src="/static/js/jqBootstrapValidation.js?v={{v}}" defer="defer"></script>
+    <script src="/static/js/custom.js?v={{v}}"></script>
 
     <script>
 
