@@ -6,11 +6,26 @@ $(window).load(function(){
     
   });
 
+var featurePositions = [];
+var featureNames = ['ST. JEAN PIED DE PORT TO RONCESVALLES', 'RONCESVALLES TO LARRASOAÑA', 'LARRASOAÑA TO PAMPLONA', 
+'PAMPLONA TO PUENTE LA REINA', 'PUENTE LA REINA TO ESTELLA', 'ESTELLA TO LOS ARCOS', 'LOS ARCOS TO LOGROÑO',
+'PONFERRADA TO VILLAFRANCA', 'VILLAFRANCA TO LA FABA', "OCEBREIRO TO SARRIA", 
+'SARRIA, PORTOMARIN, PALAS DE REI', 'PALAS DE REI TO ARZÚA', 'ARZÚA TO SANTIAGO DE COMPOSTELA'];
+
+
 $(document).ready(function() {
   init();
+
   setTimeout(
     function() {
       $('.preloader').fadeOut(1000);
+      $('h2').each(function(i, j) {
+        if ($(j).text().toLowerCase().indexOf('km') != -1) {
+          //console.log('add ' + $(j).text() + ' with ' + $(j).offset().top);
+          featurePositions.push($(j).offset().top - 400);
+        }
+      });
+      //console.log('featurePositions: ' + featurePositions);
     }, 
     2000);
 
@@ -382,10 +397,34 @@ function onePageScroll() {
 
 
 $(window).scroll(function() {
+
   var windowpos = $(window).scrollTop() ;
 
   if (windowpos <= 500) {
     $('.nav li.current').removeClass('current');
+  }
+  //console.log('current position: ' + windowpos);
+  if (windowpos < featurePositions[0])  {
+    $('#section_title').html('<a class="navbar-brand scroll icon-camino" href="#intro"></a>');
+    $('.stages-list').hide();
+  }
+  for (var i = 0; i < featurePositions.length; i++) {
+    if (windowpos > featurePositions[i] && windowpos < featurePositions[i + 1]) {
+      //console.log('show featured ' +  (i)+ ' selected: ' + featureNames[i]);
+      $('#section_title').html('<a class="navbar-brand scroll icon-camino" href="#intro"></a>' + featureNames[i]);
+      $('.stage-passive').removeClass('stage-passive-active');
+      $($('.stage-passive')[i]).addClass('stage-passive-active');
+      $('.stages-list').show();
+      // $('.icon-camino').css('text-shadow', 'none');
+    } 
+  }
+  if (windowpos > featurePositions[featurePositions.length - 1]) {
+    var i = 12;
+    $('#section_title').html('<a class="navbar-brand scroll icon-camino" href="#intro"></a>' + featureNames[i]);
+    $('.stage-passive').removeClass('stage-passive-active');
+    $($('.stage-passive')[i]).addClass('stage-passive-active');
+    $('.stages-list').show();
+    // $('.icon-camino').css('text-shadow', 'none');
   }
 });
 

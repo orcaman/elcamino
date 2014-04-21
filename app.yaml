@@ -7,9 +7,9 @@ threadsafe: yes
 default_expiration: "1d"
 
 handlers:
-- url: /favicon.ico
-  static_files: favicon.ico
-  upload: favicon.ico
+- url: /favicon.png
+  static_files: favicon.png
+  upload: favicon.png
 
 - url: /robots.txt
   static_files: robots.txt
@@ -29,5 +29,5 @@ libraries:
 
 
 env_variables:
-  latest_static_version: "2014.4.21.2"
+  latest_static_version: "2014.4.21.3"
 
