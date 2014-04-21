@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'camino';
+	src:url('fonts/camino.eot?olhrh3');
+	src:url('fonts/camino.eot?#iefixolhrh3') format('embedded-opentype'),
+		url('fonts/camino.woff?olhrh3') format('woff'),
+		url('fonts/camino.ttf?olhrh3') format('truetype'),
+		url('fonts/camino.svg?olhrh3#camino') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'camino';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-camino:before {
+	content: "\61";
+}
