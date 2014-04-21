@@ -29,5 +29,5 @@ libraries:
 
 
 env_variables:
-  latest_static_version: "2014.4.21.3"
+  latest_static_version: "2014.4.21.4"
 

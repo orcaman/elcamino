@@ -2813,3 +2813,9 @@ footer.footer .icon {
 #section_title {
   /*color: #003d62;*/
 }
+
+div.vertical-align {
+  font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 100;
+}
